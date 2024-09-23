@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hjem</title>
+		<link href="./output.css" rel="stylesheet" />
+		<link href="./input.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav >
+			<ul class="md:w-full flex justify-end items-center">
+				<li class="mr-auto">
+					<a href="#">Logo</a>
+				</li>
+				<li class="hideOnMobile">
+					<a id="navbar" href="#">Hjem</a>
+				</li>
+				<li class="hideOnMobile">
+					<a id="navbar" href="#">Om oss</a>
+				</li>
+				<li class="hideOnMobile">
+					<a id="navbar" href="#">Kontakt</a>
+				</li>
+
+				<li class="menu-button" onclick="showSidebar()">
+					<a href="#">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="26px"
+							viewBox="0 -960 960 960"
+							width="26px"
+							fill="#e8eaed"
+						>
+							<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<ul id="sidebar">
+				<li onclick="showSidebar()" class="mr-auto">
+					<a href="#">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="26px"
+							viewBox="0 -960 960 960"
+							width="26px"
+							fill="#e8eaed"
+						>
+							<path
+								d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+							/>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">Hjem</a>
+				</li>
+				<li>
+					<a href="#">Om oss</a>
+				</li>
+				<li>
+					<a href="#">Kontakt</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="div-with-image">
+			<img src="./study.jpeg" alt="study image" class="study-image" />
+			<h2 class=" text-on-image">Gruppe 13</h2>
+
+		<script>
+			function showSidebar() {
+				const sidebar = document.getElementById('sidebar');
+				sidebar.style.display = sidebar.style.display === 'none' ? 'flex' : 'none';
+			}
+		</script>
+	</body>
+</html>
