@@ -35,8 +35,8 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About us" />
+	<title>Om oss</title>
+	<meta name="description" content="om oss" />
 </svelte:head>
 
 <h1>Gruppemedlemmene</h1>

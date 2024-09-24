@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>How to play Sverdle</title>
-	<meta name="description" content="How to play Sverdle" />
+	<title>Gruppestrategi</title>
+	<meta name="description" content="gruppestrategi" />
 </svelte:head>
 <h1>Gruppestrategi</h1>
 <InfoCard>
