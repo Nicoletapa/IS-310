@@ -65,7 +65,22 @@
 				informasjonssystemer, etter å ha fullført videregående ved Edvard Munch videregående skole i
 				Oslo. I våren 2024, dro hun på utveksling til Sør-Korea, hvor erfaringen fra å ha studert i
 				utlandet, har utviklet hennes evner innen kommunikasjon, datautvikling og samskaping.
-			</span>
+				<h2>IT-kompentanse</h2>
+				<ul>
+					<li><strong>Rolle:</strong> Fullstack-utvikler</li>
+					<li>
+						<strong>Frontend-utvikling:</strong> JavaScript, Tailwind, CSS, HTML, React
+					</li>
+					<li>
+						<strong>Backend-utvikling:</strong> Java, C#, Python, PHP, Golang, .NET
+					</li>
+					<li><strong>Database-utvikling:</strong> MySQL, MariaDB, PostgreSQL</li>
+					<li><strong>Utvikler-verktøy:</strong> Docker, Git, Figma</li>
+					<li>
+						<strong>Erfaring:</strong> Utvekslingsstudent i Sør-Korea
+					</li>
+				</ul></span
+			>
 		</InfoCard>
 		<InfoCard>
 			<span slot="question">Nicoleta</span>
@@ -74,7 +89,32 @@
 				brukervennlige nettsider. Etter å ha fullført videregående skole med toppidrett og realfag,
 				begynte hun umiddelbart på høyere utdanning for å fordype seg i webutvikling. Nicoleta
 				kombinerer sin tekniske kompetanse med en sterk forståelse for design, og jobber for å skape
-				digitale løsninger som er både effektive og attraktive.
+				digitale løsninger som er både effektive og attraktive. Nicoleta har vært læringsassistent i
+				flere emner ved universitetet, inkludert IS-200 (Systemanalyse og systemutvikling), IS-201
+				(Databasemodellering og databasesystemer), og IS-202 (Programmeringsprosjekt). Gjennom disse
+				rollene har hun fått dypere innsikt i tekniske konsepter og veiledet studenter i å løse
+				komplekse utfordringer innen systemutvikling og databasedesign. Hun er for øyeblikket
+				praktikant hos Swipload Technologies AS, hvor hun jobber med å utvikle innovative løsninger
+				med både backend- og frontend-fokus.
+				<h2>IT-kompentanse</h2>
+				<ul>
+					<li><strong>Rolle:</strong> Fullstack utvikler</li>
+					<li>
+						<strong>Frontend-utvikling:</strong> Javascript, Svelte, Tailwind, CSS, React, Typescript
+					</li>
+
+					<li><strong>Backend-utvikling:</strong> C#, Java, PHP, Golang, Python, .NET</li>
+
+					<li><strong>Database-utvikling:</strong> MySQL, MariaDB, PostgreSQL</li>
+
+					<li><strong>Utvikler-verktøy:</strong> Docker, Git, Figma</li>
+
+					<li>
+						<strong>Erfaring:</strong> Læringsassistent i IS-200 Systemanalyse og systemutvikling, IS-201
+						Databasemodellering og databasesystemer og IS-202 Programmeringsprosjekt. Praktikant hos
+						Swipload Technologies AS
+					</li>
+				</ul>
 			</span>
 		</InfoCard>
 		<InfoCard>
@@ -87,7 +127,22 @@
 				begynte Anna umiddelbart på universitetet for å studere IT og informasjonssystemer ved
 				Universitetet i Agder. Denne kombinasjonen av analytisk utdanning og universitetsstudier har
 				gitt henne en unik evne til å kombinere kreativitet med teknisk innsikt i sine
-				utviklingsprosjekter.
+				utviklingsprosjekter. Anna holdt nylig en workshop under Techpoint Future, hvor hun delte
+				sin ekspertise innen designverktøyet Figma. I tillegg har hun en praksisplass hos Sikri, der
+				hun jobber med UI/UX-design.
+				<h2>IT-kompentanse</h2>
+				<ul>
+					<li><strong>Rolle:</strong> Prosjektleder</li>
+					<li>
+						<strong>Frontend-utvikling:</strong> JavaScript, HTML, Tailwind, CSS,
+					</li>
+					<li><strong>Backend-utvikling:</strong> C#, Java, PHP, Golang, .NET</li>
+					<li><strong>Database-utvikling:</strong> MySQL, MariaDB, PostgreSQL</li>
+					<li><strong>Utvikler-verktøy:</strong> Docker, Git, Figma</li>
+					<li>
+						<strong>Erfaring:</strong> Workshop under Techpoint Future, praksisplass hos Sikri
+					</li>
+				</ul>
 			</span>
 		</InfoCard>
 	</div>
@@ -109,6 +164,12 @@
 
 		margin-top: 40px;
 		padding: 20px 10px;
+	}
+	h2 {
+		font-weight: bold;
+		font-size: 1.5rem;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+			sans-serif;
 	}
 	@media (max-width: 900px) {
 		.card {

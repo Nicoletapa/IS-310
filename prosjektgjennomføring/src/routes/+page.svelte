@@ -62,21 +62,7 @@
 			sammen, besøk vår «Gruppestrategi»-side.
 		</p>
 	</selection>
-	<selection style="flex-direction: row;" class="selection-home selection-flex-end">
-		<div style="display:flex; flex-direction:column">
-			<h2>Våre syv-kjerneverdier</h2>
-			<ol>
-				<li>Kommunikasjon</li>
-				<li>Respekt</li>
-				<li>Pålitelighet</li>
-				<li>Samarbeid</li>
-				<li>Åpenhet for tilbakemeldinger</li>
-				<li>Ansvar</li>
-				<li>Fleksibilitet</li>
-			</ol>
-		</div>
-		<img class="image-who-we-are" src={values} alt="placeholder" />
-	</selection>
+
 	<selection class="selection-home">
 		<h2>Hvem er vi interresert i?</h2>
 		<p>
@@ -90,7 +76,7 @@
 			gjensidig suksess, ser vi frem til å diskutere dette nærmere med dere.
 		</p>
 		<!-- svelte-ignore a11y-no-redundant-roles -->
-		<button class="button-1">Finn ut av hvordan vi kan samarbeide</button>
+		<button class="button-1">Kontakt oss</button>
 	</selection>
 </section>
 
