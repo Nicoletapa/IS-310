@@ -1,6 +1,37 @@
 <script>
 	import InfoCard from '../InfoCard.svelte';
 	import Card from './../Card.svelte';
+	import Maria from './../../lib/images/Maria.jpg';
+	import Anna from './../../lib/images/Anna.png';
+	import Nicoleta from './../../lib/images/Nicoleta.jpg';
+	import { onMount } from 'svelte';
+
+	let visible = false;
+	let teamMembers = [
+		{
+			img: Maria,
+			name: 'Maria Anh Thu Hoang',
+			linkedinUrl: 'https://www.linkedin.com/in/maria-anh-thu-hoang-170530306/',
+			description: 'IT-student | 20 år | Entusiastisk for utvikling og design av teknologi.'
+		},
+		{
+			img: Nicoleta,
+			name: 'Nicoleta Pavelescu',
+			linkedinUrl: 'https://www.linkedin.com/in/nicoleta-pavelescu/',
+			description:
+				'IT-student | 20 år | Fokusert på å skape intuitive digitale løsninger med god funksjonalitet.'
+		},
+		{
+			img: Anna,
+			name: 'Anna Maria Dang',
+			linkedinUrl: '',
+			description: 'IT-student | 20 år | Nysgjerrig på teknologi og klar for å gjøre en forskjell.'
+		}
+	];
+
+	onMount(() => {
+		visible = true;
+	});
 </script>
 
 <svelte:head>
@@ -10,28 +41,18 @@
 
 <h1>Gruppemedlemmene</h1>
 <div>
-	<div class="card">
-		<Card linkedinUrl="https://www.linkedin.com/in/maria-anh-thu-hoang-170530306/">
-			<span slot="name">Maria Anh Thu Hoang </span>
-			<span slot="description"
-				>IT-student | 20 år | Entusiastisk for utvikling og design av teknologi.</span
-			>
-		</Card>
-
-		<Card linkedinUrl="https://www.linkedin.com/in/nicoleta-pavelescu/">
-			<span slot="name">Nicoleta Pavelescu</span>
-			<span slot="description"
-				>IT-student | 20 år | Fokusert på å skape intuitive digitale løsninger med god
-				funksjonalitet.
-			</span>
-		</Card>
-		<Card>
-			<span slot="name">Anna Maria Dang</span>
-			<span slot="description"
-				>IT-student | 20 år | Nysgjerrig på teknologi og klar for å gjøre en forskjell.
-			</span>
-		</Card>
-	</div>
+	{#if visible}
+		<div class="card">
+			{#each teamMembers as member, index}
+				<div style="transition-delay: {index * 800}ms;">
+					<Card img={member.img} linkedinUrl={member.linkedinUrl}>
+						<span slot="name">{member.name}</span>
+						<span slot="description">{member.description}</span>
+					</Card>
+				</div>
+			{/each}
+		</div>
+	{/if}
 	<div>
 		<h1>Møt Vårt Team: Kompetanse og Lidenskap</h1>
 		<InfoCard>
@@ -76,17 +97,20 @@
 	.card {
 		display: flex;
 		justify-content: center;
-
 		margin: auto;
 		gap: 1rem;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
 			sans-serif;
+		margin-bottom: 50px;
 	}
 	h1 {
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
 			sans-serif;
+
+		margin-top: 40px;
+		padding: 20px 10px;
 	}
-	@media (max-width: 800px) {
+	@media (max-width: 900px) {
 		.card {
 			flex-direction: column;
 		}

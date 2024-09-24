@@ -2,19 +2,27 @@
 	import LinkedIn from './../lib/images/linkedin.svg';
 	export let linkedinUrl = '';
 	export let img = '';
+	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	let visible = false;
+	onMount(() => {
+		visible = true;
+	});
 </script>
 
-<div class="card">
-	<img src={img} alt="portret" />
-	<h1><slot name="name" /></h1>
-	<p><slot name="description" /></p>
-	<div class="link">
-		<div class="line"></div>
-		<a class="linkedin" href={linkedinUrl}>
-			<img src={LinkedIn} alt="LinkedIn Profile" />
-		</a>
+{#if visible}
+	<div class="card" in:fade={{ duration: 800 }}>
+		<img class="image" src={img} alt="portret" />
+		<h1><slot name="name" /></h1>
+		<p><slot name="description" /></p>
+		<div class="link">
+			<div class="line"></div>
+			<a class="linkedin" href={linkedinUrl}>
+				<img src={LinkedIn} alt="LinkedIn Profile" />
+			</a>
+		</div>
 	</div>
-</div>
+{/if}
 
 <style>
 	.linkedin {
@@ -22,16 +30,21 @@
 		height: 2em;
 	}
 	.card {
+		max-width: 600px;
+		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
 		padding: 20px;
-		margin: auto;
-
+		border: 1px solid rgba(159, 144, 144, 0.42);
+		box-shadow: 2px;
+		box-shadow: 2px 2px 6px #ccc;
 		box-sizing: border-box;
 		border-radius: 20px;
-		box-shadow: 2px 2px 6px #ccc;
+	}
+	.image {
+		min-width: 200px;
+		max-width: 450px;
 	}
 	img {
 		width: 100%;
@@ -46,6 +59,9 @@
 	p {
 		margin: 0;
 		max-width: 400px;
+		min-height: 70px;
+
+		text-align: center;
 	}
 	.link {
 		margin-top: 10px;
@@ -56,8 +72,10 @@
 	}
 	.line {
 		width: 100%;
-		border-top: 1px solid #ccc;
+		border-top: 2px solid #ccc;
+		box-shadow: #ccc;
 		margin-bottom: 10px;
+		border-radius: 100%;
 	}
 	a {
 		width: 100%;
