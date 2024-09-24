@@ -24,7 +24,7 @@
 		{
 			img: Anna,
 			name: 'Anna Maria Dang',
-			linkedinUrl: '',
+			linkedinUrl: 'https://www.linkedin.com/in/anna-maria-dang-1833b3252/',
 			description: 'IT-student | 20 år | Nysgjerrig på teknologi og klar for å gjøre en forskjell.'
 		}
 	];
@@ -158,6 +158,7 @@
 			sans-serif;
 		margin-bottom: 50px;
 	}
+
 	h1 {
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
 			sans-serif;
@@ -175,6 +176,7 @@
 		.card {
 			flex-direction: column;
 			gap: 30px;
+			max-width: 500px;
 		}
 	}
 </style>

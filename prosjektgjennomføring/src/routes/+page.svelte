@@ -83,7 +83,7 @@
 <style>
 	/* CSS */
 	.button-1 {
-		background-color: #ea4c89;
+		background-color: #f15a31;
 		border-radius: 8px;
 		border-style: none;
 		box-sizing: border-box;

@@ -36,6 +36,7 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 20px;
+		padding-top: 30px;
 		border: 1px solid rgba(159, 144, 144, 0.42);
 
 		box-shadow: 2px 2px 6px #ccc;
@@ -45,7 +46,7 @@
 	}
 	.image {
 		min-width: 200px;
-		max-width: 450px;
+		max-width: 350px;
 		box-shadow: 2px 2px 6px #ccc;
 		border: 1px solid rgba(159, 144, 144, 0.42);
 	}
