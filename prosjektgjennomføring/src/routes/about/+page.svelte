@@ -36,7 +36,7 @@
 
 <svelte:head>
 	<title>About</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="About us" />
 </svelte:head>
 
 <h1>Gruppemedlemmene</h1>
@@ -113,6 +113,7 @@
 	@media (max-width: 900px) {
 		.card {
 			flex-direction: column;
+			gap: 30px;
 		}
 	}
 </style>

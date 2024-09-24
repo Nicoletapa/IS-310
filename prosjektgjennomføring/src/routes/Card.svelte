@@ -37,14 +37,17 @@
 		align-items: center;
 		padding: 20px;
 		border: 1px solid rgba(159, 144, 144, 0.42);
-		box-shadow: 2px;
+
 		box-shadow: 2px 2px 6px #ccc;
 		box-sizing: border-box;
 		border-radius: 20px;
+		background-color: rgb(255, 255, 255);
 	}
 	.image {
 		min-width: 200px;
 		max-width: 450px;
+		box-shadow: 2px 2px 6px #ccc;
+		border: 1px solid rgba(159, 144, 144, 0.42);
 	}
 	img {
 		width: 100%;
@@ -73,7 +76,7 @@
 	.line {
 		width: 100%;
 		border-top: 2px solid #ccc;
-		box-shadow: #ccc;
+
 		margin-bottom: 10px;
 		border-radius: 100%;
 	}
