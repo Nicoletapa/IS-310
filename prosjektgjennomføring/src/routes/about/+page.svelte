@@ -77,7 +77,7 @@
 					<li><strong>Database-utvikling:</strong> MySQL, MariaDB, PostgreSQL</li>
 					<li><strong>Utvikler-verktøy:</strong> Docker, Git, Figma</li>
 					<li>
-						<strong>Erfaring:</strong> Utvekslingsstudent i Sør-Korea
+						<strong>Erfaring:</strong> Utvekslingsopphold i Sør-Korea, ved Hallym Universitet
 					</li>
 				</ul></span
 			>
@@ -98,7 +98,7 @@
 				med både backend- og frontend-fokus.
 				<h2>IT-kompentanse</h2>
 				<ul>
-					<li><strong>Rolle:</strong> Fullstack utvikler</li>
+					<li><strong>Rolle:</strong> Fullstack-utvikler</li>
 					<li>
 						<strong>Frontend-utvikling:</strong> Javascript, Svelte, Tailwind, CSS, React, Typescript
 					</li>
